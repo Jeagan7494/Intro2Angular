@@ -8,19 +8,12 @@ angular.module('iDecidedThis').controller("mainController", ["$scope", function(
 	$scope.buttonClick = function() {
 		console.log("I should have asked for help earlier!")
 		$scope.greeting = "WOOHOO!!!!!!!"
-	
-	
-	$scope.buttonClick2 = function() {
-		console.log("Will I ever get the hang of this?")
-		$scope.unorderedList = [ 
-	 		'Jessica',
-	 		'Eagan',
-	 		'Jessey'
-	 ]
 	}
-}
+	$scope.hideList = true;
+	$scope.buttonClick2 = function() {
+		$scope.hideList = !$scope.hideList
+		
+	}
 
 
-
-
-  }])
+  }]) 
